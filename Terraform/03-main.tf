@@ -1,15 +1,15 @@
 # A single VM instance in GCP using Terraform
 
 resource "google_compute_instance" "vm_instance" {
-  name = var.vm_name
+  name         = var.vm_name
   machine_type = "n2-standard-2"
-  zone = var.zone
+  zone         = var.zone
 
   boot_disk {
     initialize_params {
       image = "centos-cloud/centos-stream-10"
-      size = 20
-      type = "pd-balanced"
+      size  = 20
+      type  = "pd-balanced"
     }
   }
 
@@ -21,7 +21,7 @@ resource "google_compute_instance" "vm_instance" {
   tags = ["http-server"]
 
   metadata = {
-    startup-script = file ("${path.module}/startup-script.sh")
+    startup-script = file("${path.module}/startup-script.sh")
   }
 
   labels = {

@@ -3,8 +3,8 @@
 # Variable for GCP Project ID
 variable "project_id" {
   description = "GCP project ID"
-  type = string
-  default = "invictus-65"
+  type        = string
+  default     = "invictus-65"
 }
 
 # Variable for the region
