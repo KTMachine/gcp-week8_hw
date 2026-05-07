@@ -28,10 +28,10 @@ Mandatory arguments
 When creating your output.tf file, you can reference the finished resources from your created VM Instance in Terraform 
 ```
 output "internal_ip" {
-  value = google_compute_instance.vm.network_interface[0].network_ip
+  value = google_compute_instance.vm_instance.network_interface[0].network_ip
 }
 
 output "external_ip" {
-  value = google_compute_instance.vm.network_interface[0].access_config[0].nat_ip
+  value = google_compute_instance.vm_instance.network_interface[0].access_config[0].nat_ip
 }
 ```
