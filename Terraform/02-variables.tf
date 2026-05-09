@@ -4,7 +4,7 @@
 variable "project_id" {
   description = "GCP project ID"
   type        = string
-  default     = "invictus-65"
+  default     = ""
 }
 
 # Variable for the region
