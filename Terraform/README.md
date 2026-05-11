@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Terraform Written Explanations
 
 ## Mandatory Arguments for a Google Compute Enginge VM in Terraform
@@ -144,5 +144,5 @@ The 3-tier architecture builds an application in 3 parts. The first will be the 
 ```
 - On the same page, scroll down to "Autoscaling" > See that Autoscaling mode is on
 - For Autohealing, scroll down slightly to "VM instance lifecycle"  it will show your health check name, initial delay, "on failed health check", etc.
->>>>>>> origin/KTM
+
 ```
